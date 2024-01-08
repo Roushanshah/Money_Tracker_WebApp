@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Money Tracker</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Money Tracker</h1>
+    <form id="expenseForm">
+      <input type="text" id="description" placeholder="Description" required>
+
+      <input type="number" id="amount" placeholder="Amount" required>
+
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <div class="expense-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Expense Name</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="expensesList" ></tbody>
+        </table>
+        <div class="total-amount"> 
+            <strong>Total:</strong>  
+            Rs. <span id="total-amount">0</span> 
+        </div> 
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
